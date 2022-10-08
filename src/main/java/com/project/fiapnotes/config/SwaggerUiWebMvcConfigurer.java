@@ -52,18 +52,17 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
                .allowedOrigins("http://editor.swagger.io");
 
 //       registry
+//               .addMapping("/**");
+
+//       registry
 //               .addMapping("/**")
-//               .allowedOrigins("*");
-
-       registry
-               .addMapping("/**")
-               .allowedOrigins("http://localhost:3000")
-               .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
-
-       registry
-               .addMapping("/**")
-               .allowedOrigins("https://viniroxo.github.io/fiap-note/")
-               .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+//               .allowedOrigins("http://localhost:3000")
+//               .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+//
+//       registry
+//               .addMapping("/**")
+//               .allowedOrigins("https://viniroxo.github.io/fiap-note/")
+//               .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
 
    }
     @Bean

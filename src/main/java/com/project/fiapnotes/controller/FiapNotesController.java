@@ -15,6 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/fiap-notes")
+@CrossOrigin("http://localhost:3000")
 public class FiapNotesController {
 
     final FiapNotesService service;
