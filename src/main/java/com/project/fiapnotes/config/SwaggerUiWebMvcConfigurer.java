@@ -58,7 +58,7 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
        registry
                .addMapping("/**")
                .allowedOrigins("http://localhost:3000")
-               .allowedMethods("GET", "POST", "PUT", "DELETE");
+               .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
 
    }
     @Bean

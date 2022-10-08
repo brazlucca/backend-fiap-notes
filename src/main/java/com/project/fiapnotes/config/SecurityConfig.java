@@ -44,6 +44,7 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/users/**").permitAll()
                 .anyRequest().authenticated()
+                .and().cors()
                 .and()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint)
                 .and()
