@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/fiap-notes")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin({"http://localhost:3000", "https://viniroxo.github.io/fiap-note/", "https://viniroxo.github.io"})
 public class FiapNotesController {
 
     final FiapNotesService service;
