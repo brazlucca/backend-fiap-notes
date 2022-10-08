@@ -2,8 +2,6 @@ package com.project.fiapnotes.dtos;
 
 import lombok.*;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 @Builder
@@ -13,6 +11,6 @@ public class FiapNotesDto {
 
     private String text;
 
-    private Boolean priority;
+    private Boolean urgent;
 
 }

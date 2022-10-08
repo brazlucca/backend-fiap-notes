@@ -56,7 +56,7 @@ public class FiapNotesController {
         }
 
         var fiapNotesModel = notesModelOptional.get();
-        fiapNotesModel.setPriority(fiapNotesDto.getPriority());
+        fiapNotesModel.setUrgent(fiapNotesDto.getUrgent());
         fiapNotesModel.setText(fiapNotesDto.getText());
 
         return ResponseEntity.status(HttpStatus.OK).body(service.saveNote(fiapNotesModel));
