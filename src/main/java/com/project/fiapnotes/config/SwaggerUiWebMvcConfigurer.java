@@ -44,14 +44,21 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
    }
    @Override
    public void addCorsMappings(CorsRegistry registry) {
-//       registry
-//               .addMapping("/api/pet")
-//               .allowedOrigins("http://editor.swagger.io");
-//       registry
-//               .addMapping("/v2/api-docs.*")
-//               .allowedOrigins("http://editor.swagger.io");
+       registry
+               .addMapping("/api/pet")
+               .allowedOrigins("http://editor.swagger.io");
+       registry
+               .addMapping("/v2/api-docs.*")
+               .allowedOrigins("http://editor.swagger.io");
 
-       registry.addMapping("/**");
+//       registry
+//               .addMapping("/**")
+//               .allowedOrigins("*");
+
+       registry
+               .addMapping("/**")
+               .allowedOrigins("http://localhost:3000")
+               .allowedMethods("GET", "POST", "PUT", "DELETE");
 
    }
     @Bean
