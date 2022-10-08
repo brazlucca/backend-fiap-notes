@@ -18,4 +18,4 @@ spring:
 
 jwt:
   secret: f14ajdj646
-  expireMinutes: 5
+  expireMinutes: 20
