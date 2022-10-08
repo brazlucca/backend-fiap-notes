@@ -1,4 +1,4 @@
-package com.project.fiapnotes.config;
+    package com.project.fiapnotes.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties;
@@ -44,12 +44,15 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
    }
    @Override
    public void addCorsMappings(CorsRegistry registry) {
-       registry
-               .addMapping("/api/pet")
-               .allowedOrigins("http://editor.swagger.io");
-       registry
-               .addMapping("/v2/api-docs.*")
-               .allowedOrigins("http://editor.swagger.io");
+//       registry
+//               .addMapping("/api/pet")
+//               .allowedOrigins("http://editor.swagger.io");
+//       registry
+//               .addMapping("/v2/api-docs.*")
+//               .allowedOrigins("http://editor.swagger.io");
+
+       registry.addMapping("/**");
+
    }
     @Bean
     public WebMvcEndpointHandlerMapping webEndpointServletHandlerMapping(WebEndpointsSupplier webEndpointsSupplier, ServletEndpointsSupplier servletEndpointsSupplier, ControllerEndpointsSupplier controllerEndpointsSupplier, EndpointMediaTypes endpointMediaTypes, CorsEndpointProperties corsProperties, WebEndpointProperties webEndpointProperties, Environment environment) {
